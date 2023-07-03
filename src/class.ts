@@ -8,7 +8,13 @@ class House {
   constructor(n: string) {
     this.street = n;
   }
+
+  // отримання вулиці
+  showAddress(): void {
+    console.log('Address: ' + this.street);
+  }
 }
 
 // Створюємо екземпляр класу (об'єкт) і передаємо туди назву вулиці:
 const house = new House('Middle-earth'); // new - це також синтаксичний цукор. new - це звертання до конструктору
+house.showAddress();
