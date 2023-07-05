@@ -9,7 +9,7 @@ class A1 {
 }
 class B1 extends A1 {
   showProperty() {
-    console.log(this.someProperty); // Property 'someProperty' is private and only accessible within class 'A'
+    //! console.log(this.someProperty); // Property 'someProperty' is private and only accessible within class 'A'
   }
 }
 
@@ -25,8 +25,8 @@ class B2 extends A2 {
 // Тепер звернутись до someProperty напряму не можемо, а от викликати метод, що покаже цю змнну можемо:
 const a = new A2();
 const b = new B2();
-a.someProperty; // Property 'someProperty' is protected and only accessible within class 'A2' and its subclasses.
-b.someProperty; // Property 'someProperty' is protected and only accessible within class 'A2' and its subclasses.
+//! a.someProperty; // Property 'someProperty' is protected and only accessible within class 'A2' and its subclasses.
+//! b.someProperty; // Property 'someProperty' is protected and only accessible within class 'A2' and its subclasses.
 b.showProperty();
 
 //* static - метод, або змінна, до якої можна звернутись лише через ім'я класу: UseStatic.itStaticMethod();
