@@ -66,10 +66,7 @@ type PersonType = {
 type AdditionFieldsType = {
   age: number;
 };
-const merged04 = merge03<PersonType, AdditionFieldsType>( // ці типи підставляться замість T i U у функції при її оголошенні (function merge03<T, U>(objA: T, objB: U) {...})
-  { name: 'Alisa' },
-  { age: 28 }
-);
+const merged04 = merge03<PersonType, AdditionFieldsType>({ name: 'Alisa' }, { age: 28 }); // ці типи підставляться замість T i U у функції при її оголошенні (function merge03<T, U>(objA: T, objB: U) {...})
 
 //* Поширення Generic
 // Можна вказувати, що передавати треба виключно об'єкти:

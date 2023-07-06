@@ -11,11 +11,11 @@ if (input03) {
 }
 
 //* Index Properties
-interface Person {
+interface Person_01 {
   name: string;
   [x: string]: string;
 }
-const userPerson: Person = {
+const userPerson: Person_01 = {
   name: 'Alex',
   gender: 'MAN',
   country: 'Ukraine',
@@ -32,3 +32,4 @@ const userPerson_02: Person_02 = {
   gender: 'MAN',
   country: 'Ukraine',
 };
+//
